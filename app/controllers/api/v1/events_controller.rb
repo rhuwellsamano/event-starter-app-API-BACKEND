@@ -7,7 +7,7 @@ class Api::V1::EventsController < ApplicationController
       render json: @events
     end
 
-    # PUT /events/:id
+    # PATCH /events/:id
     def update
       @event.update(event_params)
       if @event.save
